@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu Quiz - Côte d'Ivoire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Bienvenue au Quiz de la Côte d'Ivoire !</h1>
+        <div id="presentation" class="presentation">
+            <p>Veuillez entrer votre nom pour commencer :</p>
+            <input type="text" id="playerName" placeholder="Votre nom ici..." />
+            <button onclick="startGame()">Commencer</button>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question">Question ici</div>
+            <div id="answer-buttons" class="btn-grid"></div>
+            <button id="next-btn" class="next-btn hide" onclick="nextQuestion()">Suivant</button>
+        </div>
+        <div id="result-container" class="hide">
+            <h2>Résultat</h2>
+            <p id="result-text"></p>
+            <button onclick="restartGame()">Rejouer</button>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+</body>
+</html>
